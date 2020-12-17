@@ -16,10 +16,8 @@ export default async function fetcher<T = any>(
     }
 
     const error = new Error(response.statusText);
-    // @ts-ignore
-    error.response = response;
-    // @ts-ignore
-    error.data = data;
+    // error.response = response;
+    // error.data = data;
     throw error;
   } catch (error) {
     if (!error.data) {

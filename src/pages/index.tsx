@@ -1,18 +1,18 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>
+        <h1 data-testid="welcome-text">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
       </main>
     </div>
-  )
+  );
 }

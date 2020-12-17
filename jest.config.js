@@ -27,15 +27,16 @@ module.exports = {
     '<rootDir>/node_modules/',
     '<rootDir>/__mocks__/',
     '<rootDir>/coverage/',
+    '<rootDir>[/\\\\](node_modules|.next)[/\\\\]',
   ],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
-    '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
   },
   transformIgnorePatterns: [
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
+    '[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$',
   ],
   watchPlugins: [
     'jest-watch-typeahead/filename',

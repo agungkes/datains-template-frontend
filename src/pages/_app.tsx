@@ -1,8 +1,9 @@
 import fetcher from '@utils/fetcher';
 import React from 'react';
 import { SWRConfig } from 'swr';
+import { AppProps } from 'next/app';
 
-function App({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <SWRConfig
       value={{

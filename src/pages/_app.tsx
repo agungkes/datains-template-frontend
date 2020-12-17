@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
           console.error(err);
         },
       }}>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
       <style jsx global>
         {`
           html,

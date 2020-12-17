@@ -17,6 +17,7 @@
     "next-build-id": "^3.0.0",
     "next-compose-plugins": "^2.2.1",
     "next-iron-session": "^4.1.10",
+    "next-offline": "^5.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "swr": "^0.3.9"
